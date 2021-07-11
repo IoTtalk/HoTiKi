@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>History</title>
+  </head>
+
+  <body>
+    {% for f in file_list %}
+    <a href="{{ request.url +'/'+  f}}" target="_blank"><font size="4">{{f}}</font></a><br>
+    {% endfor %}
+  </body>
+
+</html>
+
+
+
